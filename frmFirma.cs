@@ -47,7 +47,7 @@ namespace pryBarreiroManuelLP3Etapas
             fechaAno = DateTime.Now.Year.ToString();
             fechaMinutos = DateTime.Now.Minute.ToString();
             FechaHoy = fechaAno+ "." + fechaMes + "." + fechaDia + " " + fechaHora + "." + fechaMinutos;
-            archivoImagen.Save(FechaHoy + ".jpg"); 
+            archivoImagen.Save(@"../../../"+"/Firma/"+FechaHoy + ".jpg"); 
         }
 
         private void cmdVolver_Click(object sender, EventArgs e)
