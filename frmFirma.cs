@@ -50,12 +50,5 @@ namespace pryBarreiroManuelLP3Etapas
             archivoImagen.Save(@"../../../"+"/Firma/"+FechaHoy + ".jpg");
             MessageBox.Show("Imagen guardada");
         }
-
-        private void cmdVolver_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmPrincipal Principal = new frmPrincipal();
-            Principal.ShowDialog();
-        }
     }
 }
