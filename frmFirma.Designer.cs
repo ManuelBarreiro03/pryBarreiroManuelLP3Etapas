@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new System.Windows.Forms.PictureBox();
-            cmdGrabar = new System.Windows.Forms.Button();
+            pictureBox1 = new PictureBox();
+            cmdGrabar = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new System.Drawing.Point(12, 12);
+            pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(260, 202);
+            pictureBox1.Size = new Size(289, 202);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Paint += pictureBox1_Paint;
@@ -45,29 +46,43 @@
             // 
             // cmdGrabar
             // 
-            cmdGrabar.Location = new System.Drawing.Point(12, 220);
+            cmdGrabar.Location = new Point(12, 220);
             cmdGrabar.Name = "cmdGrabar";
-            cmdGrabar.Size = new System.Drawing.Size(88, 29);
+            cmdGrabar.Size = new Size(88, 29);
             cmdGrabar.TabIndex = 1;
             cmdGrabar.Text = "Grabar";
             cmdGrabar.UseVisualStyleBackColor = true;
             cmdGrabar.Click += cmdGrabar_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(12, 252);
+            label1.Name = "label1";
+            label1.Size = new Size(298, 40);
+            label1.TabIndex = 2;
+            label1.Text = "Abrir el archivo .zip del la carpeta resources\r\nahi esta el proyecto completo\r\n";
+            // 
             // frmFirma
             // 
-            ClientSize = new System.Drawing.Size(284, 261);
+            ClientSize = new Size(313, 300);
+            Controls.Add(label1);
             Controls.Add(cmdGrabar);
             Controls.Add(pictureBox1);
             Name = "frmFirma";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Firma";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button cmdGrabar;
 
         #endregion
-        
+
+        private Label label1;
     }
 }
