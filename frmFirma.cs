@@ -22,7 +22,6 @@ namespace pryBarreiroManuelLP3Etapas
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             this.Text = e.Location.ToString();
-            //dibujo que vaya poniendo puntos 
             if (e.Button == MouseButtons.Left)
             {
                 using (Graphics g = Graphics.FromImage(archivoImagen))
@@ -43,11 +42,11 @@ namespace pryBarreiroManuelLP3Etapas
             string fechaDia = "", fechaHora = "", fechaMes = "", fechaAno = "", fechaMinutos = "", FechaHoy = "";
             fechaDia = DateTime.Now.Day.ToString();
             fechaHora = DateTime.Now.Hour.ToString();
-            fechaMes= DateTime.Now.Month.ToString();
+            fechaMes = DateTime.Now.Month.ToString();
             fechaAno = DateTime.Now.Year.ToString();
             fechaMinutos = DateTime.Now.Minute.ToString();
-            FechaHoy = fechaAno+ "." + fechaMes + "." + fechaDia + " " + fechaHora + "." + fechaMinutos;
-            archivoImagen.Save(@"../../../"+"/Firma/"+FechaHoy + ".jpg");
+            FechaHoy = fechaAno + "." + fechaMes + "." + fechaDia + " " + fechaHora + "." + fechaMinutos;
+            archivoImagen.Save(@"../../../" + "/Firma/" + FechaHoy + ".jpg");
             MessageBox.Show("Imagen guardada");
         }
     }

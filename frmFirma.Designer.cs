@@ -28,47 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cmdGrabar = new Button();
-            pictureBox1 = new PictureBox();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            cmdGrabar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new System.Drawing.Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(260, 202);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Paint += pictureBox1_Paint;
+            pictureBox1.MouseDown += pictureBox1_MouseMove;
+            // 
             // cmdGrabar
             // 
-            cmdGrabar.Location = new Point(12, 284);
+            cmdGrabar.Location = new System.Drawing.Point(12, 220);
             cmdGrabar.Name = "cmdGrabar";
-            cmdGrabar.Size = new Size(75, 23);
-            cmdGrabar.TabIndex = 4;
+            cmdGrabar.Size = new System.Drawing.Size(88, 29);
+            cmdGrabar.TabIndex = 1;
             cmdGrabar.Text = "Grabar";
             cmdGrabar.UseVisualStyleBackColor = true;
             cmdGrabar.Click += cmdGrabar_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(493, 266);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            pictureBox1.Paint += pictureBox1_Paint;
-            pictureBox1.MouseMove += pictureBox1_MouseMove;
-            // 
             // frmFirma
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(517, 318);
+            ClientSize = new System.Drawing.Size(284, 261);
             Controls.Add(cmdGrabar);
             Controls.Add(pictureBox1);
             Name = "frmFirma";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Firma";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button cmdGrabar;
+
         #endregion
-        private Button cmdGrabar;
-        private PictureBox pictureBox1;
+        
     }
 }
