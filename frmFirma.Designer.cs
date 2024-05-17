@@ -59,6 +59,7 @@
             Controls.Add(cmdGrabar);
             Controls.Add(pictureBox1);
             Name = "frmFirma";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
