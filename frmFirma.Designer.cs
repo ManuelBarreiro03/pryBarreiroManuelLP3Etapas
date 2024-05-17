@@ -66,7 +66,7 @@
             // 
             // frmFirma
             // 
-            ClientSize = new Size(313, 300);
+            ClientSize = new Size(323, 300);
             Controls.Add(label1);
             Controls.Add(cmdGrabar);
             Controls.Add(pictureBox1);
