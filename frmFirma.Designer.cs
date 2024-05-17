@@ -60,13 +60,13 @@
             label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(12, 252);
             label1.Name = "label1";
-            label1.Size = new Size(298, 40);
+            label1.Size = new Size(298, 60);
             label1.TabIndex = 2;
-            label1.Text = "Abrir el archivo .zip del la carpeta resources\r\nahi esta el proyecto completo\r\n";
+            label1.Text = "Por problemas con GIT\r\nAbrir el archivo .zip del la carpeta resources\r\nahi esta el proyecto completo\r\n";
             // 
             // frmFirma
             // 
-            ClientSize = new Size(323, 300);
+            ClientSize = new Size(323, 316);
             Controls.Add(label1);
             Controls.Add(cmdGrabar);
             Controls.Add(pictureBox1);
